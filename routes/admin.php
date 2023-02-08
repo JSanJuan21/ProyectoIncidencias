@@ -6,4 +6,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('',[HomeController::class,'index']);
 
+//Controlador averias
 Route::get('', [AveriaController::class, 'index'])->name('admin.averias');

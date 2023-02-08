@@ -318,6 +318,8 @@ return [
             
             
         ],
+
+        //boton averias en el menú.
         [
             'text'        => 'Averias',
             'route'         => 'admin.averias',
