@@ -318,6 +318,13 @@ return [
             
             
         ],
+        [
+            'text'        => 'Averias',
+            'route'         => 'admin.averias',
+            'icon'        => 'far fa-fw fa-file',
+            
+            
+        ],
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
