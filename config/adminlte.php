@@ -326,7 +326,7 @@ return [
         ],
         [
             'text' => 'Administrar aulas',
-            'url'  => 'admin/settings',
+            'route'  => 'admin.aulas.index',
             'icon' => 'fas fa-address-book fa-fw',
         ],
         [

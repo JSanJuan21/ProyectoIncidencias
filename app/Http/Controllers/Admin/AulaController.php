@@ -6,6 +6,7 @@ use App\Models\Aula;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+
 class AulaController extends Controller
 {
     /**
@@ -15,7 +16,9 @@ class AulaController extends Controller
      */
     public function index()
     {
-        //
+        $aulas  = Aula::all();
+
+        return view('admin.aulas.index',compact('aulas'));
     }
 
     /**
@@ -25,7 +28,7 @@ class AulaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.aulas.create');
     }
 
     /**
@@ -47,7 +50,7 @@ class AulaController extends Controller
      */
     public function show(Aula $aula)
     {
-        //
+        return view('admin.aulas.show',compact('aula'));
     }
 
     /**
@@ -58,7 +61,7 @@ class AulaController extends Controller
      */
     public function edit(Aula $aula)
     {
-        //
+        return view('admin.aulas.edit',compact('aula'));
     }
 
     /**
